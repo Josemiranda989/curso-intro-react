@@ -3,7 +3,7 @@ import "./CreateTodoButton.css";
 
 export const CreateTodoButton = ({ setOpenModal }) => {
   const onClickButton = () => {
-    return setOpenModal(true);
+    return setOpenModal(prevState => !prevState);
   };
 
   return (
